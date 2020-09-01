@@ -1,0 +1,58 @@
+{
+  "title": "string",
+  "questions": [
+    {
+      "name": "Condition",
+      "displayText": "What is the condition of your phone?",
+      "options": [
+        {
+          "name": "good",
+          "type": "string",
+          "value": "good"
+        },
+        {
+          "name": "fair",
+          "type": "string",
+          "value": "fair"
+        },
+        {
+          "name": "poor",
+          "type": "string",
+          "value": "poor"
+        }
+      ]
+    },
+    {
+      "name": "Screen",
+      "displayText": "Is the screen cracked?",
+      "options": [
+        {
+          "name": "yes",
+          "type": "string",
+          "value": "yes"
+        },
+        {
+          "name": "no",
+          "type": "string",
+          "value": "no"
+        }
+      ]
+    },
+    {
+      "name": "Unlocked",
+      "displayText": "Is the phone unlocked",
+      "options": [
+        {
+          "name": "yes",
+          "type": "string",
+          "value": "ye"
+        },
+        {
+          "name": "no",
+          "type": "string",
+          "value": "no"
+        }
+      ]
+    }
+  ]
+}

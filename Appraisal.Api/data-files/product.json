@@ -1,0 +1,36 @@
+{
+  "appraisalFormId": "",
+  "title": "IPhone 6",
+  "baseValue": "500.00",
+  "manufacturer": "Apple",
+  "model": "6X",
+  "active": true,
+  "skus": [
+    {
+      "value": "abcd",
+      "kind": "new"
+    },
+    {
+      "value": "efgh",
+      "kind": "used"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "color",
+      "value": "blue"
+    },
+    {
+      "name": "generation",
+      "value": "6"
+    },
+    {
+      "name": "capacity",
+      "value": "6 GB"
+    },
+    {
+      "name": "Network",
+      "value": "Verizon"
+    }
+  ]
+}

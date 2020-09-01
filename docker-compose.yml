@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  appraisal.api:
+    image: ${DOCKER_REGISTRY-}appraisal
+    build:
+      context: .
+      dockerfile: Appraisal.Api/Dockerfile
