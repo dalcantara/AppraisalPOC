@@ -1,0 +1,16 @@
+using System.Collections.Generic;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
+namespace Appraisal.Shared.Models
+{
+    public class AppraisalWithHistory
+    {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
+        public Product Product { get; set; }
+        public AppraisalForm AppraisalForm { get; set; }
+        public IEnumerable<AppraisalFormAnswers> AppraisalFormAnswers { get; set; }
+    }
+}
