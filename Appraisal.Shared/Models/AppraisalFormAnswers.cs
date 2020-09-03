@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Appraisal.Api.Models
+namespace Appraisal.Shared.Models
 {
     public  class AppraisalFormAnswers    
     {

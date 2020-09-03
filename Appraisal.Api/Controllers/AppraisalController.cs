@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Appraisal.Api.Repositories;
 using Microsoft.AspNetCore.Mvc;
-
 namespace Appraisal.Api.Controllers
 {
     [Route("api/Appraisal")]
@@ -20,14 +19,14 @@ namespace Appraisal.Api.Controllers
         }
         // POST api/values
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Models.Appraisal newAppraisal)
+        public async Task<IActionResult> Post([FromBody] Shared.Models.Appraisal newAppraisal)
         {
             var createdAppraisal = await _appraisalRepository.CreateAsync(newAppraisal);
             return Ok(createdAppraisal);
         }
         
         [HttpPut]
-        public async Task<IActionResult> Put([FromBody] Models.Appraisal updatedAppraisal)
+        public async Task<IActionResult> Put([FromBody] Shared.Models.Appraisal updatedAppraisal)
         {
             
             try
@@ -42,10 +41,15 @@ namespace Appraisal.Api.Controllers
             }
         }
         [HttpGet]
-        public async Task<IEnumerable<Models.Appraisal>> GetAllAsync()
+        public async Task<IEnumerable<Shared.Models.Appraisal>> GetAllAsync()
         {
-            var users =  await _appraisalRepository.GetAllAsync();
-            return await Task.FromResult(users);
+            var appraisals =  await _appraisalRepository.GetAllAsync();
+            return await Task.FromResult(appraisals);
         }
+        
+    }
+
+    public class Models
+    {
     }
 }

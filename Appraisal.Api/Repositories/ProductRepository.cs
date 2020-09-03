@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Security.Policy;
 using System.Threading.Tasks;
-using Appraisal.Api.Models;
 using Appraisal.Api.Settings;
+using Appraisal.Shared.Models;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
 

@@ -1,6 +1,42 @@
-@page "/$PAGENAME$"
-<h3>$PAGENAME$</h3>
+@page "/appraisalList"
+@inherits AppraisalListBase
+@using Appraisal.Shared.Models
+@inject HttpClient Http
 
-@code {
-  $END$
+@if (Appraisals == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Appraisal Id</th>
+            <th>Appraisal Form Title</th>
+            <th>Product Title</th>
+            <th>Lastest Appraised Value</th>
+            <th>Latest Appraise Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var appraisal in Appraisals)
+        {
+            <tr>
+                <td>
+                    <a href="@($"appraisaldetail/{appraisal.Id}")" class="btn btn-primary table-btn">
+                        @appraisal.Id
+                        @* <i class="fas fa-info-circle"></i> *@
+                    </a>
+                </td>
+                <td>@appraisal.AppraisalForm.Title</td>
+                <td>@appraisal.Product.Title</td>
+                <td>@appraisal.AppraisalFormAnswers.First().AppraisedValue</td>
+                <td>@appraisal.AppraisalFormAnswers.First().AppraisedDateTime.ToShortDateString()</td>
+            </tr>
+        }
+        </tbody>
+    </table>
 }

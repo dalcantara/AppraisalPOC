@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Appraisal.Api.Models;
 using Appraisal.Api.Settings;
+using Appraisal.Shared.Models;
 using MongoDB.Driver;
 
 namespace Appraisal.Api.Repositories

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Appraisal.Api.Models;
 using Appraisal.Api.Repositories;
+using Appraisal.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Appraisal.Api.Controllers
@@ -41,8 +41,8 @@ namespace Appraisal.Api.Controllers
         [HttpGet]
         public async Task<IEnumerable<AppraisalForm>> GetAllAsync()
         {
-            var users =  await _appraisalFormRepository.GetAllAsync();
-            return await Task.FromResult(users);
+            var appraisals =  await _appraisalFormRepository.GetAllAsync();
+            return await Task.FromResult(appraisals);
         }
     }
 }

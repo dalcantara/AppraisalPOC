@@ -7,7 +7,6 @@ namespace Appraisal.BlazorClient.Services
     public class AppraisalService : IAppraisalService
     {
         private readonly HttpClient _httpClient;
-
         public AppraisalService(HttpClient httpClient)
         {
             _httpClient = httpClient;

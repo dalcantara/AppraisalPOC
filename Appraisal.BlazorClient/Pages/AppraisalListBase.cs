@@ -3,21 +3,19 @@ using System.Threading.Tasks;
 using Appraisal.BlazorClient.Services;
 using Microsoft.AspNetCore.Components;
 
+
 namespace Appraisal.BlazorClient.Pages
 {
-    public partial class AppraisalList:ComponentBase
+    public partial class AppraisalListBase:ComponentBase
     {
+        public Appraisal.Shared.Models.Appraisal[] Appraisals { get; set; }
+
         // ReSharper disable once MemberCanBePrivate.Global
-        [Inject] public IAppraisalService Service { get; set; }
-
-        public AppraisalList(IAppraisalService appraisalService)
+        [Inject] public IAppraisalService AppraisalService { get; set; }
+        
+        protected override async Task OnInitializedAsync()
         {
-            Service = appraisalService;
-        }
-
-        public Task<List<Appraisal.Shared.Models.Appraisal>> GetAll()
-        {
-            return Service.GetAll();
+            Appraisals = await AppraisalService.GetAll();
         }
     }
 }

@@ -1,142 +1,145 @@
-{
-   "product":{
+[
+  {
+    "Id": "1234",
+    "product": {
       "id": "5f4d51bb751126bfa2adf64e",
       "appraisalFormId": "5f4d51e4751126bfa2adf64f",
-      "title":"IPhone 6",
-      "baseValue":"500.00",
-      "manufacturer":"Apple",
-      "model":"6X",
-      "active":true,
-      "skus":[
-         {
-            "value":"abcd",
-            "kind":"new"
-         },
-         {
-            "value":"efgh",
-            "kind":"used"
-         }
+      "title": "IPhone 6",
+      "baseValue": "500.00",
+      "manufacturer": "Apple",
+      "model": "6X",
+      "active": true,
+      "skus": [
+        {
+          "value": "abcd",
+          "kind": "new"
+        },
+        {
+          "value": "efgh",
+          "kind": "used"
+        }
       ],
-      "attributes":[
-         {
-            "name":"color",
-            "value":"blue"
-         },
-         {
-            "name":"generation",
-            "value":"6"
-         },
-         {
-            "name":"capacity",
-            "value":"6 GB"
-         },
-         {
-            "name":"Network",
-            "value":"Verizon"
-         }
+      "attributes": [
+        {
+          "name": "color",
+          "value": "blue"
+        },
+        {
+          "name": "generation",
+          "value": "6"
+        },
+        {
+          "name": "capacity",
+          "value": "6 GB"
+        },
+        {
+          "name": "Network",
+          "value": "Verizon"
+        }
       ]
-   },
-   "appraisalForm": {
+    },
+    "appraisalForm": {
       "id": "5f4d51e4751126bfa2adf64f",
-      "title": "string",
+      "title": "Mobile Phone",
       "questions": [
-         {
-            "name": "Condition",
-            "displayText": "What is the condition of your phone?",
-            "options": [
-               {
-                  "name": "good",
-                  "type": "string",
-                  "value": "good"
-               },
-               {
-                  "name": "fair",
-                  "type": "string",
-                  "value": "fair"
-               },
-               {
-                  "name": "poor",
-                  "type": "string",
-                  "value": "poor"
-               }
-            ]
-         },
-         {
-            "name": "Screen",
-            "displayText": "Is the screen cracked?",
-            "options": [
-               {
-                  "name": "yes",
-                  "type": "string",
-                  "value": "yes"
-               },
-               {
-                  "name": "no",
-                  "type": "string",
-                  "value": "no"
-               }
-            ]
-         },
-         {
-            "name": "Unlocked",
-            "displayText": "Is the phone unlocked",
-            "options": [
-               {
-                  "name": "yes",
-                  "type": "string",
-                  "value": "ye"
-               },
-               {
-                  "name": "no",
-                  "type": "string",
-                  "value": "no"
-               }
-            ]
-         }
-      ]
-   },
-   "appraisalFormAnswers":[
-      {
-         "appraisedValue":"300.00",
-         "appraisedDateTime":"2020-08-31T14:35:58.076Z",
-         "answeredOption":[
+        {
+          "name": "Condition",
+          "displayText": "What is the condition of your phone?",
+          "options": [
             {
-               "name":"condition",
-               "type":null,
-               "value":"good"
+              "name": "good",
+              "type": "string",
+              "value": "good"
             },
             {
-               "name":"screen",
-               "type":null,
-               "value":"no"
+              "name": "fair",
+              "type": "string",
+              "value": "fair"
             },
             {
-               "name":"unlocked",
-               "type":null,
-               "value":"yes"
+              "name": "poor",
+              "type": "string",
+              "value": "poor"
             }
-         ]
+          ]
+        },
+        {
+          "name": "Screen",
+          "displayText": "Is the screen cracked?",
+          "options": [
+            {
+              "name": "yes",
+              "type": "string",
+              "value": "yes"
+            },
+            {
+              "name": "no",
+              "type": "string",
+              "value": "no"
+            }
+          ]
+        },
+        {
+          "name": "Unlocked",
+          "displayText": "Is the phone unlocked",
+          "options": [
+            {
+              "name": "yes",
+              "type": "string",
+              "value": "ye"
+            },
+            {
+              "name": "no",
+              "type": "string",
+              "value": "no"
+            }
+          ]
+        }
+      ]
+    },
+    "appraisalFormAnswers": [
+      {
+        "appraisedValue": "300.00",
+        "appraisedDateTime": "2020-08-31T14:35:58.076Z",
+        "answeredOption": [
+          {
+            "name": "condition",
+            "type": null,
+            "value": "good"
+          },
+          {
+            "name": "screen",
+            "type": null,
+            "value": "no"
+          },
+          {
+            "name": "unlocked",
+            "type": null,
+            "value": "yes"
+          }
+        ]
       },
       {
-         "appraisedValue":"100.00",
-         "appraisedDateTime":"2020-08-31T14:25:58.076Z",
-         "answeredOption":[
-            {
-               "name":"condition",
-               "type":null,
-               "value":"poor"
-            },
-            {
-               "name":"screen",
-               "type":null,
-               "value":"no"
-            },
-            {
-               "name":"unlocked",
-               "type":null,
-               "value":"yes"
-            }
-         ]
+        "appraisedValue": "100.00",
+        "appraisedDateTime": "2020-08-31T14:25:58.076Z",
+        "answeredOption": [
+          {
+            "name": "condition",
+            "type": null,
+            "value": "poor"
+          },
+          {
+            "name": "screen",
+            "type": null,
+            "value": "no"
+          },
+          {
+            "name": "unlocked",
+            "type": null,
+            "value": "yes"
+          }
+        ]
       }
-   ]
-}
+    ]
+  }
+]

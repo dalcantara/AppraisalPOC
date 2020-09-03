@@ -1,4 +1,4 @@
-namespace Appraisal.Api.Models
+namespace Appraisal.Shared.Models
 {
     public class Sku
     {

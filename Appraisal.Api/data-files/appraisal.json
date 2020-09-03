@@ -1,7 +1,7 @@
 {
    "product":{
-      "id": "5f4d51bb751126bfa2adf64e",
-      "appraisalFormId": "5f4d51e4751126bfa2adf64f",
+      "id": "5f50b795d611e1c8772ae9c5",
+      "appraisalFormId": "5f50b76dd611e1c8772ae9c4",
       "title":"IPhone 6",
       "baseValue":"500.00",
       "manufacturer":"Apple",
@@ -37,7 +37,7 @@
       ]
    },
    "appraisalForm": {
-      "id": "5f4d51e4751126bfa2adf64f",
+      "id": "5f50b76dd611e1c8772ae9c4",
       "title": "string",
       "questions": [
          {

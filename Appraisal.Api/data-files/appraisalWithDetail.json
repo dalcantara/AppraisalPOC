@@ -1,40 +1,8 @@
 {
-   "product":{
+   "productSummary":{
       "id": "5f50b795d611e1c8772ae9c5",
       "appraisalFormId": "5f50b76dd611e1c8772ae9c4",
-      "title":"IPhone 6",
-      "baseValue":"500.00",
-      "manufacturer":"Apple",
-      "model":"6X",
-      "active":true,
-      "skus":[
-         {
-            "value":"abcd",
-            "kind":"new"
-         },
-         {
-            "value":"efgh",
-            "kind":"used"
-         }
-      ],
-      "attributes":[
-         {
-            "name":"color",
-            "value":"blue"
-         },
-         {
-            "name":"generation",
-            "value":"6"
-         },
-         {
-            "name":"capacity",
-            "value":"6 GB"
-         },
-         {
-            "name":"Network",
-            "value":"Verizon"
-         }
-      ]
+      "baseValue":"500.00"
    },
    "appraisalForm": {
       "id": "5f50b76dd611e1c8772ae9c4",
@@ -116,27 +84,27 @@
                "value":"yes"
             }
          ]
-      },
-      {
-         "appraisedValue":"100.00",
-         "appraisedDateTime":"2020-08-31T14:25:58.076Z",
-         "answeredOption":[
-            {
-               "name":"condition",
-               "type":null,
-               "value":"poor"
-            },
-            {
-               "name":"screen",
-               "type":null,
-               "value":"no"
-            },
-            {
-               "name":"unlocked",
-               "type":null,
-               "value":"yes"
-            }
-         ]
       }
-   ]
+   ],
+   "appraisalFormAnswersHistory": [ {
+      "appraisedValue":"100.00",
+      "appraisedDateTime":"2020-08-31T14:25:58.076Z",
+      "answeredOption":[
+         {
+            "name":"condition",
+            "type":null,
+            "value":"poor"
+         },
+         {
+            "name":"screen",
+            "type":null,
+            "value":"no"
+         },
+         {
+            "name":"unlocked",
+            "type":null,
+            "value":"yes"
+         }
+      ]
+   }]
 }
