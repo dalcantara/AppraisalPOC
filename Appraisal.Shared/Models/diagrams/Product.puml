@@ -1,0 +1,28 @@
+@startuml
+class Category {
+    Id
+    Title
+}
+class Product
+{
+    Id
+    Title
+    BaseValue
+}
+class Sku
+{
+    Value
+    Kind
+}
+class Attribute
+{
+    Name
+    Value
+}
+
+Category o--"0..*"Category
+Category o--"1..*"Product
+Product o--"1..*"Sku
+Product o--"1..*"Attribute
+
+@enduml

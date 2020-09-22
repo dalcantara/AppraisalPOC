@@ -1,0 +1,22 @@
+@startuml
+class AppraisalForm
+{
+    Id
+    Title
+ }
+
+class AppraisalFormQuestion
+{
+    Name
+    DisplayText
+}
+
+class AppraisalFormQuestionOption
+{
+  Name
+  Value
+  Type
+}
+AppraisalForm o--"1..*"AppraisalFormQuestion
+AppraisalFormQuestion o--"1..*"AppraisalFormQuestionOption
+@enduml

@@ -95,11 +95,12 @@
          }
       ]
    },
-   "appraisalFormAnswers":[
+   "appraisalEvent":[
       {
          "appraisedValue":"300.00",
          "appraisedDateTime":"2020-08-31T14:35:58.076Z",
-         "answeredOption":[
+         "type": "appraised",
+         "appraisalFormAnswer":[
             {
                "name":"condition",
                "type":null,

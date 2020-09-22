@@ -1,0 +1,68 @@
+
+@startuml
+
+'Appraisal Domain Model
+
+Appraisal o--"1"Product
+Appraisal o--"1"AppraisalForm
+Appraisal o--"1..*"AppraisalFormAnswers
+AppraisalFormAnswers o--"1..*"AppraisalFormQuestionOption
+Category o--"0..*"Category
+Category o--"1..*"Product
+Product o--"1..*"Sku
+Product o--"1..*"AppraisalForm
+Product o--"1..*"Attribute
+AppraisalForm o--"1..*"AppraisalFormQuestion
+AppraisalFormQuestion o--"1..*"AppraisalFormQuestionOption
+
+class Appraisal
+{
+    Id
+ }
+class AppraisalFormAnswers    
+{
+    AppraisedValue 
+    
+    AppraisedDateTime 
+}
+
+class Category {
+    Id
+    Title
+    ParentCategory
+}
+class Product
+{
+    Id
+    Title
+    BaseValue
+}
+class Sku
+{
+    Value
+    Kind
+}
+class Attribute
+{
+    Name
+    Value
+}
+class AppraisalForm
+{
+    Id
+    Title
+ }
+
+class AppraisalFormQuestion
+{
+    Name
+    DisplayText
+}
+
+class AppraisalFormQuestionOption
+{
+  Name
+  Value
+  Type
+}
+@enduml

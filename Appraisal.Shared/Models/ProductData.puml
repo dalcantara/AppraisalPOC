@@ -1,0 +1,18 @@
+@startuml
+class Product
+{
+    Id
+    Title
+    Model
+    Manufacturer
+    Active
+    Skus
+    Attributes
+    Links [
+        BaseValueLink
+        PromotionsLink
+        AppraisalFormLink
+    ] 
+}
+note right: Links contains references to services \n that can provide the latest values for the data they represent \n products can potentially contain references to images - see magellan product entity 
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+!include Product.puml 
+!include AppraisalForm.puml 
+!include Appraisal.puml
+
+@enduml
