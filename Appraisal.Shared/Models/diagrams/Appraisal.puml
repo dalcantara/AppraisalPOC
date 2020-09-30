@@ -3,20 +3,26 @@
 !include AppraisalForm.puml 
 class Appraisal
 {
+    Id
+    State
 }
  note right: in the context of appraisal product is most likely a product summary \n  
 
 class AppraisalEvent    
 {
     AppraisedValue 
+    PromotionalValue 
+    TotalValue
     AppraisedDateTime 
     Appraiser
+    AppliedPromotions
+    Channel
 }
 
 Appraisal o--"1"Product
 Appraisal o--"1..*"AppraisalEvent
 Appraisal o--"1"AppraisalForm
-Product o--"1"AppraisalForm
+Product o--"1..*"AppraisalForm
 AppraisalEvent o--"1..*"AppraisalFormAnswer
 AppraisalFormAnswer o--"1..*"AppraisalFormQuestionOption
 @enduml

@@ -18,11 +18,11 @@ AppraisalFormQuestion o--"1..*"AppraisalFormQuestionOption
 class Appraisal
 {
     Id
- }
+}
 class AppraisalFormAnswers    
 {
+    SelectedOption
     AppraisedValue 
-    
     AppraisedDateTime 
 }
 

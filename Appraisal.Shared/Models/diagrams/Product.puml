@@ -19,7 +19,6 @@ class Attribute
     Name
     Value
 }
-
 Category o--"0..*"Category
 Category o--"1..*"Product
 Product o--"1..*"Sku
