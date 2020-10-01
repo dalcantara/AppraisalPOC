@@ -5,24 +5,27 @@ class Appraisal
 {
     Id
     State
+    ExpirationDates
 }
  note right: in the context of appraisal product is most likely a product summary \n  
 
-class AppraisalEvent    
+class X    
 {
     AppraisedValue 
     PromotionalValue 
     TotalValue
-    AppraisedDateTime 
     Appraiser
-    AppliedPromotions
     Channel
+    AppraisedDateTime 
+    AppliedPromotions
 }
 
-Appraisal o--"1"Product
-Appraisal o--"1..*"AppraisalEvent
+Appraisal o--"1"Product 
+note left: Base Value is frozen at this point \n 
+Appraisal o--"1..*"X
+note right: AppliedPromotions = latest versions of the selected promotions \n 
 Appraisal o--"1"AppraisalForm
 Product o--"1..*"AppraisalForm
-AppraisalEvent o--"1..*"AppraisalFormAnswer
+X o--"1..*"AppraisalFormAnswer
 AppraisalFormAnswer o--"1..*"AppraisalFormQuestionOption
 @enduml
