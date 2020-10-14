@@ -20,11 +20,10 @@ class X
     AppliedPromotions
 }
 
-Appraisal o--"1"Product 
+Appraisal o--"1..*"Product 
 note left: Base Value is frozen at this point \n 
 Appraisal o--"1..*"X
 note right: AppliedPromotions = latest versions of the selected promotions \n 
-Appraisal o--"1"AppraisalForm
 Product o--"1..*"AppraisalForm
 X o--"1..*"AppraisalFormAnswer
 AppraisalFormAnswer o--"1..*"AppraisalFormQuestionOption
